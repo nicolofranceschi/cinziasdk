@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GiovanniIncammicia/cinzia-sdk.git"
+    "url": "git+https://github.com/Nicolofranceschi/CinziaSdk.git"
   },
   "keywords": [
     "cinzia",
@@ -29,9 +29,9 @@
   "author": "Giovanni Incammicia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GiovanniIncammicia/cinzia-sdk/issues"
+    "url": "https://github.com/Nicolofranceschi/CinziaSdk/issues"
   },
-  "homepage": "https://github.com/GiovanniIncammicia/cinzia-sdk#readme",
+  "homepage": "https://github.com/Nicolofranceschi/CinziaSdk#readme",
   "devDependencies": {
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/jest": "29.5.6",
