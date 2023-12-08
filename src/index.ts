@@ -30,7 +30,7 @@ type ApiErrorResponse = {
  * @throws If there is an error with the API request or if the response is invalid.
  */
 export async function auth({ apiKey }: { apiKey: string }) {
-  if (window) console.warn('ONLY USE SERVER-SIDE');
+  if (typeof window !== 'undefined') console.warn('ONLY USE SERVER-SIDE');
   const response = await fetchApi('/auth', { method: 'POST', body: JSON.stringify({ apiKey }) });
   const data = (await response.json()) as ApiAuthResponse | ApiErrorResponse;
   if (!data) throw new Error('No data returned from auth');
@@ -67,7 +67,7 @@ type ApiChatRequest = {
  * @param callback - A function that's called every time a new message is received from the server.
  * @returns A Promise that resolves with the response body as a text/event-stream.
  */
-export async function chat(body: ApiChatRequest, callback: (data: string) => void) {
+export async function chat(body: ApiChatRequest, callback?: (data: string) => void) {
   const response = await fetchApi('/chat', {
     method: 'POST',
     body: JSON.stringify(body),
@@ -90,7 +90,7 @@ export async function chat(body: ApiChatRequest, callback: (data: string) => voi
 
     const chunkValue = stream.decoder.decode(value);
     text += chunkValue;
-    callback(text);
+    callback?.(text);
   }
   return text;
 }

@@ -1,9 +1,12 @@
 {
-  "name": "cinzia-sdk",
+  "name": "@Nicolofranceschi/CinziaSdk",
   "version": "0.1.0",
   "description": "SDK for Cinzia",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "publishConfig": {
+    "@Nicolofranceschi:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.(js|ts)\"",
