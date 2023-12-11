@@ -1,5 +1,5 @@
 {
-  "name": "@Nicolofranceschi/CinziaSdk",
+  "name": "@nicolofranceschi/cinziasdk",
   "version": "0.1.1",
   "description": "SDK for Cinzia",
   "main": "lib/index.js",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nicolofranceschi/CinziaSdk.git"
+    "url": "git+https://github.com/Nicolofranceschi/cinziasdk.git"
   },
   "keywords": [
     "cinzia",
@@ -32,9 +32,9 @@
   "author": "Giovanni Incammicia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Nicolofranceschi/CinziaSdk/issues"
+    "url": "https://github.com/Nicolofranceschi/cinziasdk/issues"
   },
-  "homepage": "https://github.com/Nicolofranceschi/CinziaSdk#readme",
+  "homepage": "https://github.com/Nicolofranceschi/cinziasdk#readme",
   "devDependencies": {
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/jest": "29.5.6",
