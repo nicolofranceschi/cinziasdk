@@ -68,7 +68,7 @@ type ApiChatRequest = {
  * @returns A Promise that resolves with the response body as a text/event-stream.
  */
 export async function chat(body: ApiChatRequest, callback?: (data: string) => void) {
-  const response = await fetchApi('/chat', {
+  const response = await fetchApi('/sdk-chat', {
     method: 'POST',
     body: JSON.stringify(body),
   });
