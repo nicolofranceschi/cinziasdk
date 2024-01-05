@@ -2,7 +2,7 @@
 Questa SDK permette di interagire con il server di Cinzia e quindi comunicare con la nostra AI.
 
 ## Indice
-- [Installazone](#installazione)
+- [Installazione](#installazione)
 - [Uso](#uso)
 - [Test](#test)
 - [Crea una nuova versione](#crea-una-nuova-versione)
