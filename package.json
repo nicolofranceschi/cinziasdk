@@ -12,7 +12,7 @@
     "format": "prettier --write \"src/**/*.(js|ts)\"",
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --fix --ext .js,.ts",
-    "test": "cross-env CINZIA_SERVER_URL=http://Cinzia.app-Server:8080 jest --config jest.config.js",
+    "test": "jest --config jest.config.js",
     "prepare": "npm run build",
     "preversion": "npm run lint && npm run format",
     "version": "git add -A src",

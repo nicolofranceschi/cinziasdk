@@ -16,17 +16,26 @@ npm install
 ```
 
 ## Uso
-Per usare questa SDK è necessario avere impostato l'env con l'indirizzo del server di Cinzia.
-```dotenv
+Impostare l'env del proprio progetto con l'indirizzo del server di Cinzia
+```bash
 CINZIA_SERVER_URL=http://localhost:8080
 ```
 Per usare l'sdk vedi l'esempio in src/__tests__/index.test.js
 
 ## Test
-Per testare l'app è necessario avere una versione locale del server di Cinzia.
-Modificare l'env presente nel package.json con l'indirizzo del server locale.
+Impostare l'env del proprio terminale con l'indirizzo del server di Cinzia. Per testare l'app è necessario avere una versione locale del server di Cinzia.
+### Su Linux
 ```bash
-npm run test
+export CINZIA_SERVER_URL=http://localhost:8080
+```
+### Su Window
+```bash
+set CINZIA_SERVER_URL=http://localhost:8080
+```
+Dopodiché lanciare il seguente comando:
+
+```bash
+npm test
 ```
 
 ## Crea una nuova versione
