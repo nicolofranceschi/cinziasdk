@@ -1,38 +1,54 @@
-# Project Name
+# Cinzia SDK
+Questa SDK permette di interagire con il server di Cinzia e quindi comunicare con la nostra AI.
 
-A brief description of the project.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+## Indice
+- [Installazone](#installazione)
+- [Uso](#uso)
+- [Test](#test)
+- [Crea una nuova versione](#crea-una-nuova-versione)
+- [Fai un rilascio](#fai-un-rilascio)
+- [Contribuisci](#contribuisci)
 - [License](#license)
 
-## Installation
-
+## Installazione
 ```bash
 npm install
 ```
 
-## Usage
-
-```javascript
-import { FunctionName } from 'cinzia-sdk';
+## Uso
+Per usare questa SDK è necessario avere impostato l'env con l'indirizzo del server di Cinzia.
+```dotenv
+CINZIA_SERVER_URL=http://localhost:8080
 ```
+Per usare l'sdk vedi l'esempio in src/__tests__/index.test.js
 
-## Create a new version
+## Test
+Per testare l'app è necessario avere una versione locale del server di Cinzia.
+Modificare l'env presente nel package.json con l'indirizzo del server locale.
 ```bash
-npm version major | minor | patch
+npm run test
 ```
 
-## Publish a new version
-The package is published to the Github NPM Registry automatically when a new tag is created.
+## Crea una nuova versione
+```bash
+npm version major
+```
+oppure
+```bash
+npm version minor
+```
+oppure
+```bash
+npm version patch
+```
+Questo comando crea un nuovo tag e aggiorna il package.json con la nuova versione. Fa il push del tag sul repository remoto.
 
-## Contributing
+## Fai un rilascio
+Su github, una volta che abbiamo creato la nuova versione, andiamo nella sezione "releases" a destra e clicchiamo su "Create a new release".
+Inseriamo il tag creato e il titolo della release. Inseriamo una descrizione e clicchiamo su "Publish release".
 
-Guidelines on how to contribute to the project and any code of conduct.
+## Contribuisci
+TODO
 
 ## License
-
-Information about the project's license and any additional disclaimers.
+TODO

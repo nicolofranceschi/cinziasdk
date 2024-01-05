@@ -14,9 +14,8 @@
     "lint:fix": "eslint src --fix --ext .js,.ts",
     "test": "cross-env CINZIA_SERVER_URL=http://Cinzia.app-Server:8080 jest --config jest.config.js",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
+    "preversion": "npm run lint && npm run format",
+    "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
   "repository": {
