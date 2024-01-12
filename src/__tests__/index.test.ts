@@ -11,9 +11,10 @@ function skipTest () {
   return false;
 }
 
-describe('index', () => {
-  let token: string;
-  it('should reply', async () => {
+let token: string;
+
+describe('auth', () => {
+  it('should authenticate and return a token', async () => {
     if (skipTest()) return;
     const user = await auth({ apiKey: API_KEY });
     token = user.token;
@@ -25,7 +26,10 @@ describe('index', () => {
     });
     expect(typeof res).toBe('string');
   });
-  it('should reply with', async () => {
+});
+
+describe('chat', () => {
+  it('should reply', async () => {
     if (skipTest()) return;
     const res = await chat({
       locale: 'it',
@@ -44,5 +48,3 @@ describe('index', () => {
     expect(typeof res).toBe('string');
   });
 });
-
-describe('chat', () => {});
