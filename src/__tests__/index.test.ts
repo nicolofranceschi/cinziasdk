@@ -2,7 +2,7 @@ const API_KEY = '6585661277b7998ecb53c1c1';
 import { describe, it, expect } from '@jest/globals';
 import { auth, chat } from '../index';
 
-function skipTest () {
+function skipTest() {
   if (!process.env.CINZIA_SERVER_URL) {
     console.warn('Missing CINZIA_SERVER_URL env variable, skipping test');
     expect(true).toBe(true);
